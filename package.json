@@ -1,0 +1,30 @@
+{
+  "name": "variadic",
+  "version": "0.0.0",
+  "description": "A JavaScript utility for creating variadic functions",
+  "main": "variadic.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/node-variadic.git"
+  },
+  "keywords": [
+    "function",
+    "variadic",
+    "variable",
+    "arguments",
+    "length"
+  ],
+  "author": "Blake Embrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/node-variadic/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/node-variadic",
+  "devDependencies": {
+    "mocha": "~1.16.2",
+    "istanbul": "~0.2.3"
+  }
+}
