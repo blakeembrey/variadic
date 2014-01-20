@@ -1,6 +1,6 @@
 {
   "name": "variadic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A JavaScript utility for creating variadic functions",
   "main": "variadic.js",
   "scripts": {
