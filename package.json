@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/blakeembrey/node-variadic.git"
+    "url": "git://github.com/blakeembrey/variadic.git"
   },
   "keywords": [
     "function",
@@ -20,9 +20,9 @@
   "author": "Blake Embrey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/blakeembrey/node-variadic/issues"
+    "url": "https://github.com/blakeembrey/variadic/issues"
   },
-  "homepage": "https://github.com/blakeembrey/node-variadic",
+  "homepage": "https://github.com/blakeembrey/variadic",
   "devDependencies": {
     "mocha": "~1.16.2",
     "istanbul": "~0.2.3"
