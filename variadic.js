@@ -1,5 +1,3 @@
-var __slice = Array.prototype.slice;
-
 /**
  * Generate a function that accepts a variable number of arguments as the last
  * function argument.
@@ -11,11 +9,19 @@ module.exports = function (fn) {
   var count = Math.max(fn.length - 1, 0);
 
   return function () {
-    var args = __slice.call(arguments, 0, count);
+    var args = new Array(count);
+    var index = 0;
 
-    // Enforce the array length, in case we don't have enough array padding.
-    args.length = count;
-    args.push(__slice.call(arguments, count));
+    // https://github.com/petkaantonov/bluebird/wiki/Optimization-killers#3-managing-arguments
+    for (; index < count; index++) {
+      args[index] = arguments[index];
+    }
+
+    var variadic = args[count] = [];
+
+    for (; index < arguments.length; index++) {
+      variadic.push(arguments[index]);
+    }
 
     return fn.apply(this, args);
   };
