@@ -3,7 +3,7 @@
 [![NPM version][npm-image]][npm-url]
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
-[![Gittip][gittip-image]][gittip-url]
+[![Greenkeeper badge](https://badges.greenkeeper.io/blakeembrey/variadic.svg)](https://greenkeeper.io/)
 
 Return a function that accepts a variable number of arguments as the last parameter.
 
